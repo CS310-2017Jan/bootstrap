@@ -10,13 +10,13 @@
   "keywords": [],
   "version": "0.0.1",
   "devDependencies": {
-    "icedfrisby": "^0.3.0",
-    "istanbul": "^0.4.4",
-    "joi": "^10.0.6",
-    "tslint": "^4.1.1",
-    "bootstrap": "^3.3.7",
-    "d3": "^4.2.2",
-    "jquery": "^3.1.0"
+    "icedfrisby": "^0.3.X",
+    "istanbul": "^0.4.X",
+    "joi": "^10.0.X",
+    "tslint": "^4.1.X",
+    "bootstrap": "^3.3.X",
+    "d3": "^4.2.X",
+    "jquery": "^3.1.X"
   },
   "scripts": {
     "clean": "rm -rf ./node_modules/",
@@ -24,8 +24,8 @@
     "configure": "yarn install",
     "configurewin": "yarn install",
     "build": "tsc",
-    "test": "mocha -c -R mochawesome",
-    "cover": "istanbul cover _mocha",
+    "test": "mocha -c  --timeout 10000 -R mochawesome",
+    "cover": "istanbul cover _mocha ",
     "coverwin": "istanbul cover node_modules/mocha/bin/_mocha",
     "start": "node src/App.js"
   },
