@@ -1,5 +1,6 @@
 /**
- * REST endpoint configuration. Restify is configured here.
+ * This is the REST entry point for the project.
+ * Restify is configured here.
  */
 
 import restify = require('restify');
@@ -78,7 +79,7 @@ export default class Server {
 
     // The next two methods handle the echo service.
     // These are almost certainly not the best place to put these, but are here for your reference.
-    // By updating the Server.echo function pointer above these methods can be easily moved.
+    // By updating the Server.echo function pointer above, these methods can be easily moved.
 
     public static echo(req: restify.Request, res: restify.Response, next: restify.Next) {
         Log.trace('Server::echo(..) - params: ' + JSON.stringify(req.params));

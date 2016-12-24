@@ -9,35 +9,7 @@ export interface InsightResponse {
 }
 
 export interface QueryRequest {
-    WHERE: Filter|{};
-    AS: string;
-    ORDER?: SortOption|string;
-    GROUP?: string[]
-    APPLY?: {[key: string]: {[key: string]: string}}[];
-}
 
-export interface SortOption {
-    dir: string;
-    keys: string[];
-}
-
-export interface Filter {
-    AND?: Filter[];
-    OR?: Filter[];
-    NOT?: Filter;
-    IS?: SComparison;
-    EQ?: MComparison;
-    LT?: MComparison;
-    GT?: MComparison;
-    [key: string]: Filter|Filter[]|SComparison|MComparison;
-}
-
-export interface MComparison {
-    [key: string]: number;
-}
-
-export interface SComparison {
-    [key: string]: string;
 }
 
 export interface IInsightFacade {

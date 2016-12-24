@@ -1,8 +1,4 @@
 /**
- * Created by rtholmes on 2016-06-20.
- */
-
-/**
  * Collection of logging methods. Useful for making the output easier to read and understand.
  *
  * @param msg

@@ -1,5 +1,5 @@
 /**
- * This is the main programmatic entrypoint for your system.
+ * This is the main programmatic entry point for the project.
  */
 import {IInsightFacade, InsightResponse, QueryRequest} from "./IInsightFacade";
 

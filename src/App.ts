@@ -1,7 +1,5 @@
 /**
- * Created by rtholmes.
- *
- * Starts the server.
+ * Starts the server. It is unlikely you will have to change anything here.
  */
 import Server from './rest/Server';
 import Log from './Util';
