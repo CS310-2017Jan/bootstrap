@@ -10,13 +10,10 @@
   "keywords": [],
   "version": "0.0.1",
   "devDependencies": {
-    "bootstrap": "^3.3.X",
     "bunyan": "^1.8.5",
-    "d3": "^4.2.X",
     "icedfrisby": "^0.3.X",
     "istanbul": "^0.4.5",
     "joi": "^10.0.X",
-    "jquery": "^3.1.X",
     "mocha": "^3.2.0",
     "tslint": "^4.1.X"
   },
