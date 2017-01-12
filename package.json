@@ -8,7 +8,7 @@
   "repository": "N/A",
   "bugs": "",
   "keywords": [],
-  "version": "0.0.1",
+  "version": "0.2.0",
   "devDependencies": {
     "bootstrap": "^3.3.X",
     "bunyan": "^1.8.5",
@@ -16,7 +16,6 @@
     "icedfrisby": "^0.3.X",
     "istanbul": "^0.4.5",
     "joi": "^10.0.X",
-    "jquery": "^3.1.X",
     "mocha": "^3.2.0",
     "tslint": "^4.1.X"
   },
@@ -44,6 +43,8 @@
     "mocha": "^3.2.0",
     "mochawesome": "^1.5.2",
     "parse5": "^3.0.1",
+    "request": "^2.79.0",
+    "request-promise-native": "^1.0.3",
     "restify": "^4.0.3",
     "typescript": "^2.1.X"
   }
