@@ -25,8 +25,8 @@
     "configure": "yarn install",
     "configurewin": "yarn install",
     "build": "tsc",
-    "test": "mocha -c  --timeout 10000 -R mochawesome",
-    "cover": "istanbul cover _mocha ",
+    "test": "mocha -c  --timeout 15000 -R mochawesome",
+    "cover": "istanbul cover _mocha -- --timeout 30000",
     "coverwin": "istanbul cover node_modules/mocha/bin/_mocha",
     "start": "node src/App.js"
   },
