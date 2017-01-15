@@ -54,6 +54,11 @@ export default class Server {
                     name: 'insightUBC'
                 });
 
+                that.rest.get('/', function (req: restify.Request, res: restify.Response, next: restify.Next) {
+                    res.send(200);
+                    return next();
+                });
+
                 // provides the echo service
                 // curl -is  http://localhost:4321/echo/myMessage
                 that.rest.get('/echo/:msg', Server.echo);
