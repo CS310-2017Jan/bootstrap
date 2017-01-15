@@ -22,9 +22,10 @@
     "configure": "yarn install",
     "configurewin": "yarn install",
     "build": "tsc",
-    "test": "mocha -c  --timeout 15000 -R mochawesome",
-    "cover": "nyc -r json yarn run test",
-    "coverwin": "nyc -r json yarn run test",
+    "test": "mocha -c --timeout 10000 -R mochawesome",
+    "testcover": "mocha -c --timeout 10000",
+    "cover": "nyc -r json-summary yarn run testcover",
+    "coverwin": "nyc -r json-summary yarn run testcover",
     "start": "node src/App.js"
   },
   "dependencies": {
