@@ -24,8 +24,8 @@
     "build": "tsc",
     "test": "mocha -c --timeout 10000 -R mochawesome",
     "testcover": "mocha -c --timeout 10000",
-    "cover": "nyc -r json-summary yarn run testcover",
-    "coverwin": "nyc -r json-summary yarn run testcover",
+    "cover": "nyc -r json-summary --reporter=lcov yarn run testcover",
+    "coverwin": "nyc -r json-summary --reporter=lcov yarn run testcover",
     "start": "node src/App.js"
   },
   "dependencies": {
